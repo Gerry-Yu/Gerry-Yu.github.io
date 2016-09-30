@@ -1,0 +1,35 @@
+# Site settings
+name: GerryYU | Blog
+email: pg_yu@sina.com
+author: GerryYU
+github: https://github.com/Gerry-Yu/
+baseurl: ""
+description: Fighting!!
+meta_description: 
+motto: GerryYU | Blog
+banner: Where there is a will, there is a way.
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+# paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: Gerry-Yu
+highlighter: rouge
+
+# Build settings
+markdown: kramdown
+
+FB:
+  comments :
+    provider : duoshuo
+    duoshuo:
+        short_name : luoyan35714
+    disqus :
+        short_name : freudkang
+    # facebook :
+    #   appid : 123
+    #   num_posts: 5
+    #   width: 580
+    #   colorscheme: light
