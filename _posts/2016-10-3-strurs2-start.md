@@ -30,17 +30,20 @@ tag: SSH
 
 ## Demo（用户登录）
 #### web.xml
+
 ```
 <filter>
-	<filter-name>struts2</filter-name>
+    <filter-name>struts2</filter-name>
     <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
 </filter>
 <filter-mapping>
-	<filter-name>struts2</filter-name>
+    <filter-name>struts2</filter-name>
     <url-pattern>/*</url-pattern>
-</filter-mapping>
+</filter-mapping>\
 ```
+
 #### struts.xml
+
 ```
 <package name="default" namespace="/" extends="struts-default"> //package
     <action name="loginAction" class="com.demo.actions.LoginAction"> //action
@@ -49,15 +52,19 @@ tag: SSH
     </action>
 </package>
 ```
+
 #### index.jsp
+
 ```
 <form action="loginAction" method="post">
-	<input type="text" name="username" >
+    <input type="text" name="username" >
     <input type="password" name="password" >
     <input type="submit" value="Submit">
 </form>
 ```
+
 #### LoginAction
+
 ``` java
 public class LoginAction extends ActionSupport{
     private String username;
@@ -89,9 +96,6 @@ public class LoginAction extends ActionSupport{
     }
 }
 ```
+
 #### Demo-GitHub
 [Gerry-Yu/strurs2Demo](https://github.com/Gerry-Yu/struts2Demo)
-
-
-
-
