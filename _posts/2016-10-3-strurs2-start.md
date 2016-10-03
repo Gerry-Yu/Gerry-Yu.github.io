@@ -15,13 +15,13 @@ tag: SSH
 #### 方式一 idea Struts2
 
 + 创建Struts2
-![图1]({{ '/styles/images/20161003-1.jpg' | prepend: site.baseurl  }})
+![图1](/styles/images/20161003-1.jpg)
 + Add Marven
-![图2]({{ '/styles/images/20161003-2.jpg' | prepend: site.baseurl  }})
+![图2](/styles/images/20161003-2.jpg)
 
 
 #### 方式二 Marven Webapp
-+ ![图3]({{ '/styles/images/20161003-3.jpg' | prepend: site.baseurl  }})
++ ![图3](/styles/images/20161003-3.jpg)
 
 #### 比较
 + 目录结构稍有不同，但不影响
