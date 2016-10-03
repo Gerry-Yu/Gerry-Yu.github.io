@@ -20,15 +20,16 @@ tag: SSH
 ![图2]({{ '/styles/images/20161003-2.jpg' | prepend: site.baseurl  }})
 
 
-### 方式二 Marven Webapp
+#### 方式二 Marven Webapp
 + ![图3]({{ '/styles/images/20161003-3.jpg' | prepend: site.baseurl  }})
 
-### 比较
+#### 比较
 + 目录结构稍有不同，但不影响
 + 一需要将lib下jar包拷贝到WEB-INF/lib目录下（两个地方都要）
 + 二需要在pom.xml添加依赖包（比较喜欢这种），但是struts.xml需要在resource目录下！！！
 
 ## Demo（用户登录）
+
 #### web.xml
 
 ``` xml
