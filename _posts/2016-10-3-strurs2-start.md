@@ -31,7 +31,7 @@ tag: SSH
 ## Demo（用户登录）
 #### web.xml
 
-```
+``` xml
 <filter>
     <filter-name>struts2</filter-name>
     <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
@@ -39,12 +39,12 @@ tag: SSH
 <filter-mapping>
     <filter-name>struts2</filter-name>
     <url-pattern>/*</url-pattern>
-</filter-mapping>\
+</filter-mapping>
 ```
 
 #### struts.xml
 
-```
+``` xml
 <package name="default" namespace="/" extends="struts-default"> //package
     <action name="loginAction" class="com.demo.actions.LoginAction"> //action
         <result name="success">WEB-INF/success.jsp</result> //处理结果和物理视图之间对应关系
@@ -55,7 +55,7 @@ tag: SSH
 
 #### index.jsp
 
-```
+``` html
 <form action="loginAction" method="post">
     <input type="text" name="username" >
     <input type="password" name="password" >
