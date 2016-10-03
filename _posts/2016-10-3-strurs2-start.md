@@ -23,7 +23,7 @@ tag: SSH
 
 
 #### 方式二 Marven Webapp
-+ ![图3](/styles/images/20161003-3.jpg)
+![图3](/styles/images/20161003-3.jpg)
 
 #### 比较
 + 目录结构稍有不同，但不影响
