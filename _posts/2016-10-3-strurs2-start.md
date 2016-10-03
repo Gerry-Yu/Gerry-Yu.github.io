@@ -15,8 +15,10 @@ tag: SSH
 #### 方式一 idea Struts2
 
 + 创建Struts2
+
 ![图1](/styles/images/20161003-1.jpg)
 + Add Marven
+
 ![图2](/styles/images/20161003-2.jpg)
 
 
