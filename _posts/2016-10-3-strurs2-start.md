@@ -28,7 +28,7 @@ tag: SSH
 + 一需要将lib下jar包拷贝到WEB-INF/lib目录下（两个地方都要）
 + 二需要在pom.xml添加依赖包（比较喜欢这种），但是struts.xml需要在resource目录下！！！
 
-## Demo（用户登录）
+## Demo(Login)
 
 #### web.xml
 
