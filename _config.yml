@@ -16,7 +16,8 @@ permalink: /:year/:month/:day/:title/
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
 github_username: Gerry-Yu
-highlighter: rouge
+#highlighter: rouge
+highlight: true
 
 # Build settings
 markdown: kramdown
