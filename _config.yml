@@ -20,16 +20,5 @@ highlighter: rouge
 
 # Build settings
 markdown: kramdown
-
-FB:
-  comments :
-    provider : duoshuo
-    duoshuo:
-        short_name : luoyan35714
-    disqus :
-        short_name : freudkang
-    # facebook :
-    #   appid : 123
-    #   num_posts: 5
-    #   width: 580
-    #   colorscheme: light
+kramdown:
+  input: GFM
