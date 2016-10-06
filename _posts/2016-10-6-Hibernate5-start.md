@@ -57,7 +57,8 @@ Hibernate配置文件一般由以下两种，一般采用第二种方式
 @Entity 声明一个Hibernate持久化类  
 @Table 指定映射表  
 @Id 标识属性，通常映射到表的主键列  
-@GeneratedValue 主键生成的策略，省略则主键值需要自己输入。strategy有4个属性值:
+@GeneratedValue 主键生成的策略，省略则主键值需要自己输入。strategy有4个属性值:  
+
 + GenerationType.AUTO：Hibernate自动选择最适合底层数据库的主键生成策略  
 + GenerationType.IDENTITY 主键值自动增长（MySQL, SQL Server）  
 + GenerationType.SEQUENCE 基于Sequence的主键生成策略，与@SequencetGenerator一起使用（Oracle）  
