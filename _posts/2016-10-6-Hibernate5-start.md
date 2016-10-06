@@ -100,7 +100,7 @@ public class News {
 
 ``` java
     @Test
-    public void InsertNews() {
+    public void InsertNews()  {
         Configuration configuration = new Configuration().configure();
         SessionFactory sessionFactory = configuration.buildSessionFactory();
         Session session = sessionFactory.openSession();
