@@ -16,6 +16,7 @@ Hibernate配置文件一般由以下两种，一般采用第二种方式
 > 使用hibernate.cfg.xml文件配置时，可以使用注解和.hbm.xml文件两种方式实现表的映射。在这里，采用`注解`方式。使用Intellij idea hibernate.cfg.xml文件应放在resource目录下。   
 
 使用C3P0数据库连接池的配置文件如下：
+
 ``` xml
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE hibernate-configuration PUBLIC
