@@ -51,6 +51,7 @@ Hibernate配置文件一般由以下两种，一般采用第二种方式
     </session-factory>
 </hibernate-configuration>
 ```
+
 ## 持久化注解
 @Entity 声明一个Hibernate持久化类  
 @Table 指定映射表  
