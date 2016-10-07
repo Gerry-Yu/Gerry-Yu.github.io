@@ -31,7 +31,7 @@ tag: SSH
 
 ## 两种整合策略
 
-> 两种方式都需要struts2的Spring插件struts2-spring-plugin-xxx.jar，两种方式Action都由Spring插件创建
+> 两种方式都需要struts2的Spring插件struts2-spring-plugin-xxx.jar，两种方式Action都由Spring插件创建  
 > Spring容器负责管理Action，利用依赖注入为控制器注入业务逻辑
 
 
