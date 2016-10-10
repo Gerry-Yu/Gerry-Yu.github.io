@@ -1,3 +1,4 @@
+---
 layout: post
 title:  "Spring整合Struts&Hibernate"
 categories: SSH
