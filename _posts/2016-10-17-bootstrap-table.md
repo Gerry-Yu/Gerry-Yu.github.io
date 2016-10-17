@@ -20,6 +20,7 @@ tag: 前端
 ``` html
  <table id="table"></table>
 ```
+
 ## JS
 
 > 这里使用Server分页方式，想后台传入pageSize和PageNumber。使用post方式必须设置`contentType`
