@@ -14,7 +14,8 @@ tag: spring
 > Spring-security默认查询数据库使用JdbcDaoImpl，但是建立的数据库表必须确定，如果自己想怎么建表就怎么建表，至少自己要实现UserDetailsService。实现UserDetailsService就是要自己实现以下函数，根据username返回UserDetail，与输入的username和password对比。
 ``` java
 public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException
-```
+```  
+
 > 下面是我自己实现的UserDetailsService，使用MyBatis来访问数据库。层次很分明：首先查看数据库是否有username这个用户，没有直接抛出异常。再查看这个用户的权限，没有权限也直接抛出异常。最后将完整的UserDetail返回。这里使用默认实现UserDetail的org.springframework.security.core.userdetails.User，当然也可以自己实现UserDetail。
 
 
@@ -86,5 +87,6 @@ List<String> loadUserAuthorities(int userId); //根据userId返回权限
 
 ## 源代码
 
-刚学习，写的特别渣，和spring-mail一起写了第一个用户注册、登录验证和权限管理。
+刚学习，写的特别渣，和spring-mail一起写了第一个用户注册、登录验证和权限管理。  
+
 [GitHub](https://github.com/Gerry-Yu/spring-security-mail)
