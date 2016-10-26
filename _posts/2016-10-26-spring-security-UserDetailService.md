@@ -89,4 +89,6 @@ List<String> loadUserAuthorities(int userId); //根据userId返回权限
 
 刚学习，写的特别渣，和spring-mail一起写了第一个用户注册、登录验证和权限管理。  
 
-[GitHub](https://github.com/Gerry-Yu/spring-security-mail)
+[GitHub](https://github.com/Gerry-Yu/spring-security-mail)  
+
+[这是](https://gerry-yu.github.io/2016/10/26/Spring-Mail/)spring-mail的
