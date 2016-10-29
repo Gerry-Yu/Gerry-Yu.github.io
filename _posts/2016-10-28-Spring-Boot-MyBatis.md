@@ -89,8 +89,12 @@ spring.datasource.dbcp2.max-total=10
 ```
 ## MyBatis使用
 
-> MyBatis可以有两种方式配置，一种是全使用注解，一种是使用xml文件配置。这两种配置参考[这里](http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/index.html)。这里使用注解的方式，所有注解参考[这里](http://www.mybatis.org/mybatis-3/zh/java-api.html)。  
+> MyBatis可以有两种方式配置，一种是全使用注解，一种是使用xml文件配置，当然这两种方式可以结合起来啦。这两种配置参考[这里](http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/index.html)。这里使用注解的方式，所有注解参考[这里](http://www.mybatis.org/mybatis-3/zh/java-api.html)。  
+
+### 纯注解方式
+
 代码参考以下：这里使用@Results注解代替ResultMap
+
 ``` java
 @Mapper
 public interface UserDao {
@@ -108,6 +112,35 @@ public interface UserDao {
     @Select("select * from user")
     List<User> getAllUsers();
 }
+```
+
+### 注解和XML结合
+
+> 如果使用xml配置方式，需要在application.properties文件中添加xml文件配置目录
+
+``` properties
+#MYBATIS
+mybatis.type-aliases-package=com.demo.model
+mybatis.mapper-locations=classpath*:/mapper/*Mapper.xml
+```
+
+然后在xml文件中配置所需，这就和以前配置一样了
+
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.dao.UserDao">
+    <resultMap id="userMapXML" type="User">
+        <id property="id" column="userId" />
+        <result property="name" column="username"/>
+    </resultMap>
+
+<!--    <select id="getAllUsers" resultMap="userMapXML">
+        select * from user;
+    </select>-->
+</mapper>
 ```
 
 ## 源代码
