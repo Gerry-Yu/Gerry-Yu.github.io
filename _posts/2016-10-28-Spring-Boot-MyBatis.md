@@ -86,7 +86,8 @@ spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 spring.datasource.dbcp2.initial-size=2
 spring.datasource.dbcp2.max-idle=8
 spring.datasource.dbcp2.max-total=10
-```
+```  
+
 ## MyBatis使用
 
 > MyBatis可以有两种方式配置，一种是全使用注解，一种是使用xml文件配置，当然这两种方式可以结合起来啦。这两种配置参考[这里](http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/index.html)。这里使用注解的方式，所有注解参考[这里](http://www.mybatis.org/mybatis-3/zh/java-api.html)。  
