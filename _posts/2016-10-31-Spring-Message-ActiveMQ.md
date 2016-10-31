@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Spring-Boot-Security-Mail"
+title:  "Spring-Message-ActiveMQ"
 categories: spring
 tag: spring
 ---
