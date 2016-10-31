@@ -83,6 +83,7 @@ public class ReceiveMessageImpl implements ReceiveMessageService{
     </param-value>
   </context-param>
 ```
+
 #### ActiveMQ.xml
 
 ``` xml
